@@ -45,6 +45,13 @@ public class classOne {
 						.collect(Collectors.toList());
 
 		System.out.println(filtered);
+
+		Double averageAge = persons
+				.stream()
+				.collect(Collectors.averagingInt(p -> p.age));
+
+		// a!!!!!!!!!!!!!!
+		System.out.println(averageAge);
 	}
 
 }
